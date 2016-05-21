@@ -2,7 +2,7 @@
 
 $version['name']            = "SolusVM";
 $version['api_version']     = "1.0";
-$version['date']            = "2016-06-21"; // Last modification date
+$version['date']            = "2016-05-21"; // Last modification date
 $version['wefact_version']  = "3.4.3"; // Version released for WeFact
 
 // Information for customer (will be showed at registrar-show-page)
