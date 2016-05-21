@@ -50,10 +50,9 @@ class SolusVM
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
         $data = curl_exec($ch);
-        file_put_contents(__DIR__.'/bla.json', file_get_contents(__DIR__.'/bla.json')."\n[$this->ServerURL] ".$data);
         curl_close($ch);
-      // Parse the returned data and build an array
-      preg_match_all('/<(.*?)>([^<]+)<\/\\1>/i', $data, $match);
+        // Parse the returned data and build an array
+        preg_match_all('/<(.*?)>([^<]+)<\/\\1>/i', $data, $match);
         if (isset($postfields['rdtype'])) {
             return $data;
         }
