@@ -404,7 +404,7 @@ class SolusVM
 	 */
     public function suspend($vps_id, $action)
     {
-        if(!$this->__login())
+        if(!$this->validateLogin())
         {
             return FALSE;
         }
